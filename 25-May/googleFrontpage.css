@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkslategrey;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+nav{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    font-size: 13px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    border-bottom: 1px solid white;
+}
+main{
+    width: 35%;
+    margin: auto;
+}
+.container>h1{
+    text-align: center;
+    font-size: 80px;
+    color:#d1cccc55;
+    padding: 20px;
+}
+.google-apps:hover{
+    cursor: pointer;
+}
+.google-account>img{
+    cursor: pointer;
+    border-radius: 50%;
+}
+.search-bar{
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 1px 1px 5px 2px rgb(70, 69, 69);
+}
+.search-bar>input{
+    border: none;
+    width:100%;
+}
+input:active{
+    border: none;
+}
+.apps-wraper{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 15px 0;
+}
+.app>abbr{
+    align-self: flex-end;
+    visibility: hidden;
+}
+.app{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+}
+.app:hover{
+    background-color: #d1cccc55;
+}
+.app:hover>abbr{
+    visibility: visible;
+}
+.app>h3{
+    font-size: 13px;
+    color: white;
+    padding: 15px 10px 0 10px ;
+}
+.app-logo{
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: lightseagreen;
+}
+.g-drive-container{
+    /* padding: 10px 15px; */
+    width: 100%;
+    background-color: lightseagreen;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    padding: 15px 15px;
+    align-items: center;
+}
+.row>h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.row1{
+    justify-content: space-between;
+}
+.row2{
+    gap: 15px;
+    cursor: pointer;
+}
+.row2:hover{
+    background-color:rgba(132, 130, 130, 0.332) ;
+}
+.content>h3{
+    font-size: 13px;
+    font-weight: 400;
+}
+.icon-g-drive{
+    display: flex;
+}
+.ab-icon-wrap{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.ab-icon-wrap:hover{
+    background-color: rgba(132, 130, 130, 0.332);
+}
+.g-apps{
+    width: 300px;
+    height: 450px;
+    display: block;
+    position: fixed;
+    left: 80%;
+    top:8%;
+    border-radius: 5px;
+    background-color: rgb(62, 61, 61);
+}
+.google-apps:hover > .g-apps{
+    display: none;
+}
