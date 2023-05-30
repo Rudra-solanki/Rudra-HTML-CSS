@@ -34,7 +34,7 @@ li>a:hover{
     border-bottom: 1px solid white;
 }
 main{
-    width: 39%;
+    width: 40%;
     margin: auto;
 }
 .container>h1{
@@ -62,12 +62,13 @@ main{
     border-radius: 50px;
     box-shadow: 1px 1px 3px 2px rgba(110, 109, 109, 0.619);
 }
-.search-bar>.input-search>input{
-    padding: 5px;
-    padding-right: 250px;
-    font-size: 17px;
+.input-search{
+    width: 100%;
+}
+.input-search>input{
+    width: 100%;
     border: none;
-    width:100%;
+    font-size: 15px;
 }
 .input-search>input:focus {
     outline: none;
@@ -75,8 +76,9 @@ main{
 .search-bar-wraper{
     position: absolute;
     border-radius: 10px;
+    padding-top: 40px;
     width: 100%;
-    height: 400px;
+    padding-bottom: 10px;
     z-index: -1;
     top: 0;
     left: 0;
@@ -86,6 +88,52 @@ main{
 }
 .input-search:hover>.search-bar-wraper{
     display: block;
+}
+.search-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 0;
+}
+.search-menu:hover{
+    background-color: rgba(207, 203, 203, 0.663);
+}
+.search-clock,.search-cross{
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+.search-visible-part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.search-clock>svg,.search-cross>svg{
+    width: 100%;
+}
+.search-cross{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search-menu:hover>.search-cross>svg{
+    display: block;
+}
+.search-cross>svg{
+    display: none;
+    width: 100%;
+}
+.search-cross:hover{
+    background-color: rgba(195, 194, 194, 0.637);
+}
+.search-visible-part>h3{
+    font-weight: 400;
+    font-size: 17px;
+    padding-left: 5px;
 }
 .apps-wraper{
     display: flex;
@@ -132,6 +180,7 @@ main{
 }
 .g-drive-container{
     width: 100%;
+    margin-bottom: 35px;
     background-color: rgba(142, 245, 245, 0.845);
     border-radius: 8px;
     display: flex;
@@ -210,7 +259,7 @@ main{
     transition: 0.25s;
 }
 .google-apps:hover{
-   background-color: rgba(78, 76, 76, 0.51);
+    background-color: rgba(78, 76, 76, 0.51);
 }
 .g-apps:hover{
     display: block;
@@ -289,16 +338,35 @@ main{
 .workspace-wraper>h3{
     font-weight: 400;
 }
-::-webkit-scrollbar {
+.g-apps::-webkit-scrollbar {
     width: 8px;
 }
-::-webkit-scrollbar-track {
+.g-apps::-webkit-scrollbar-track {
     background: transparent; 
   }
-::-webkit-scrollbar-thumb {
+.g-apps::-webkit-scrollbar-thumb {
     background: rgb(116, 114, 114); 
     border-radius: 5px;
   }
-::-webkit-scrollbar-thumb:hover {
+.g-apps::-webkit-scrollbar-thumb:hover {
     background: rgb(95, 95, 95); 
+}
+.customize-wra{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.customize-wra:hover{
+    background-color: rgba(255, 255, 255, 0.275);
+    border: none;
+    scale: 1.1;
 }
