@@ -282,9 +282,10 @@ main{
     height: 70%;
 }
 .mail-box-wraper{
-    width: 80%;
+    width: 79.25%;
+    height: 90vh;
     border-radius: 20px;
-    background-color: rgb(208, 199, 204);
+    background-color: #F2F6FC;
     display: flex;
     flex-direction: column;
 }
@@ -311,19 +312,74 @@ main{
     height: 50%;
 }
 .check-detls-wrap{
-    border: 2px solid gray;
-    background-color: rgba(128, 128, 128, 0.614);
     border-radius: 5px;
     padding: 10px 5px ;
+    border: 1px solid rgba(128, 128, 128, 0);
+}
+.check-detls-wrap:hover{
+    border: 1px solid rgba(128, 128, 128, 0.366);
+    background-color: #bdc0c398;
+
 }
 input[type='checkbox']{
     height: 15px;
+    cursor: pointer;
     width: 15px;
 }
 select{
+    cursor: pointer;
     border: none;
+    background-color: #bdc0c300;
 }
 .right-icons{
     opacity: 0.5;
     font-size: 12px;
+}
+.mails-container{
+    display: flex;
+    flex-direction: column;
+}
+.mail-item{
+    justify-content: space-between;
+    border-bottom: 1px solid #DADCE0;
+    padding:0 5px;
+}
+.first-mail-part{
+    width: 20%;
+}
+.m-select-wraper{
+    justify-content: space-between;
+}
+.six-dot{
+    height: 21px;
+    width: 21px;
+    opacity: 0;
+}
+.six-dot>svg{
+    height: 80%;
+    width: 80%;
+}
+.m-star-wraper{
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+.m-star-wraper:hover{
+    background-color: rgba(128, 128, 128, 0.252);
+}
+.m-star-wraper>svg{
+    height: 20px;
+    width: 20px;
+}
+.mail-item p{
+    font-size: 13px;
+}
+.m-subject-wraper{
+    width: 55%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    border: 1px solid #000000;
 }
